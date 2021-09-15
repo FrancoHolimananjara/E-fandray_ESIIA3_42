@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
+}
+
+input {
+  border: 1px solid #333;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+.int{
+  display: flex;
+  flex-direction: column;
+}
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 8px;
+}
+
+.connected-users {
+  width: 300px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #5063c7;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 30px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connected-users h2 {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.connected-users .connected-user {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  background: #6579dd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.connected-users .connected-user:last-child {
+  margin-bottom: 0;
+}
+
+.connected-users .connected-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.connected-users .connected-user span {
+  font-size: 1rem;
+}
+
+.messages {
+  width: calc(100vw - 300px);
+}
+
+.messages .message-list {
+  height: calc(100vh - 45px);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.messages .message-list .message {
+  font-weight: 300;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 70%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+
+.messages .message-list .message:last-child {
+  margin-bottom: 0;
+}
+
+.messages .message-list .message.sended {
+  background: #5063c7;
+  color: white;
+  margin-left: auto;
+}
+
+.messages .message-list .message.received {
+  background: #f9f9f9;
+  color: #333;
+}
+
+.messages .message-list .message.received time {
+  color: #666 !important;
+}
+
+.messages .message-list .message .message-info {
+  margin-bottom: 3px;
+}
+
+.messages .message-list .message .message-info span, .messages .message-list .message .message-info time {
+  font-size: .8rem;
+}
+
+.messages .message-list .message .message-info span {
+  color: orange;
+}
+
+.messages .message-list .message .message-info time {
+  color: #ddd;
+}
+
+.messages form {
+  height: 45px;
+}
+
+.messages form input {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  height: 100%;
+  width: 85%;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+}
+
+.messages form input::-webkit-input-placeholder {
+  font-size: .95rem;
+  color: #ccc;
+}
+
+.messages form input:-ms-input-placeholder {
+  font-size: .95rem;
+  color: #ccc;
+}
+
+.messages form input::-ms-input-placeholder {
+  font-size: .95rem;
+  color: #ccc;
+}
+
+.messages form input::placeholder {
+  font-size: .95rem;
+  color: #ccc;
+}
+
+.messages form button {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  height: 100%;
+  width: 15%;
+  background: #5063c7;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.messages form button:hover {
+  background: #6579dd;
+}
+
+.enter-username-form {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enter-username-form input {
+  display: inline-block;
+  width: 300px;
+  height: 35px;
+  margin-bottom: 10px;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.enter-username-form input::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: .9rem;
+}
+
+.enter-username-form input:-ms-input-placeholder {
+  color: #ccc;
+  font-size: .9rem;
+}
+
+.enter-username-form input::-ms-input-placeholder {
+  color: #ccc;
+  font-size: .9rem;
+}
+
+.enter-username-form input::placeholder {
+  color: #ccc;
+  font-size: .9rem;
+}
+
+.enter-username-form button {
+  background: #5063c7;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 7px 35px;
+}
+
+.enter-username-form button:hover {
+  background: #6579dd;
+}
+
+@media (max-width: 960px) {
+  .connected-users {
+    width: 250px;
+  }
+  .connected-users h2 {
+    font-size: 1.5rem;
+  }
+  .connected-users .connected-user img {
+    width: 45px;
+    height: 45px;
+  }
+  .connected-users .connected-user span {
+    font-size: .9rem;
+  }
+  .messages {
+    width: calc(100vw - 250px);
+  }
+  .messages .message p {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .messages form input {
+    width: 75%;
+    font-size: 1.1rem;
+  }
+  .messages form button {
+    width: 25%;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

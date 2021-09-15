@@ -1,0 +1,14 @@
+.head{
+    background-color: #6579dd;
+    display: flex;
+    justify-content: center;
+
+}
+.title{
+    font-weight: bold;
+}
+p{
+    align-self: center;
+    color: white;
+    margin-left: 10px;
+}
